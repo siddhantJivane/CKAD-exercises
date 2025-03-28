@@ -91,6 +91,10 @@ kubectl get po --selector=app=v2
 
 ```bash
 kubectl label po -l "app in(v1,v2)" tier=web
+
+or
+
+k label  pods tier=web -l "app in (v1,v2)"
 ```
 </p>
 </details>
