@@ -336,6 +336,8 @@ kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hell
 
 ```bash
 kubectl run busybox --image=busybox -it --rm --restart=Never -- /bin/sh -c 'echo hello world'
+or
+k run busybox --image=busybox -it -rm --restart=Never --command -- echo 'hello world'
 kubectl get po # nowhere to be found :)
 ```
 
